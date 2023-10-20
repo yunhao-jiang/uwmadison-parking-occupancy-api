@@ -1,6 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
-from flask import Flask, jsonify, request
+from flask import Flask, request
 
 ENDPOINT = '/uw-parking-occupancy'
 
@@ -52,4 +52,4 @@ def get_parking_occupancy(watched_lots=None):
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=80)
